@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomePageController!{% endblock %}
+
+{% block body %}
+
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="assets/images/travel.png" alt="logo" height="70px"></div>
+        <div class="search">
+            <input placeholder="Trouver un gp..." type="text">
+            <button type="submit">Chercher</button>
+        </div>
+        <button class="cta">
+            <span>Connexion</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
+    </div>
+    <div class="titreS">Gp World</div>
+    
+    <div class="banner">
+        <button class="prev">&lt;</button>
+        <div class="banner-content">Bannière Pub ou Carroussel</div>
+        <button class="next">&gt;</button>
+    </div>
+    
+    <div class="content">
+        <button class="filtre">Filtre</button>
+        <table class="gp-list">
+            <thead>
+                <tr>
+                    <th>Nom Prénom</th>
+                    <th>Départ</th>
+                    <th>Arrivée</th>
+                    <th>Date de départ</th>
+                    <th>Téléphone</th>
+                    <th>Tarif au kilo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="6">1-</td></tr>
+                <tr><td colspan="6">2-</td></tr>
+                <tr><td colspan="6">3-</td></tr>
+                <tr><td colspan="6">4-</td></tr>
+                <tr><td colspan="6">5-</td></tr>
+                <tr><td colspan="6">6-</td></tr>
+                <tr><td colspan="6">7-</td></tr>
+                <tr><td colspan="6">8-</td></tr>
+                <tr><td colspan="6">9-</td></tr>
+                <tr><td colspan="6">10-</td></tr>
+            </tbody>
+        </table>
+        <div class="pagination">page suivante...</div>
+    </div>
+
+        <!-- Existing HTML content -->
+    
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h3>À Propos</h3>
+                    <p>GP World est une entreprise de transport de marchandises dédiée à offrir des services rapides et fiables à nos clients.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Tarifs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact</h3>
+                    <p>Adresse: 123 Rue de Transport, Paris, France</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                    <p>Email: info@gpworld.com</p>
+                </div>
+                <div class="footer-section social">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                    <li><a href="#"><img src="assets/images/facebookC.png" alt="Facebook">Facebook</a></li>
+                    <li><a href="#"><img src="assets/images/twitter.png" alt="Twitter">Twitter</a></li>
+                    <li><a href="#"><img src="assets/images/phone-call.png" alt="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#"><img src="assets/images/instagramC.png" alt="Instagram">Instagram</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 GP World | Tous droits réservés
+            </div>
+        </div>
+</body>
+
+{% endblock %}
